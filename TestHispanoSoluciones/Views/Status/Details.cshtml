@@ -1,0 +1,26 @@
+﻿@model TestHispanoSoluciones.Models.Status
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Status</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Status1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id_Status }) |
+    @Html.ActionLink("Regresar", "Index")
+</p>

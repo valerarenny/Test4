@@ -1,0 +1,57 @@
+﻿@model TestHispanoSoluciones.Models.Turno
+
+@{
+    ViewBag.Title = "Borrar";
+}
+
+<h2>Borrar</h2>
+
+<h3>Estas seguro que quieres borrar esto?</h3>
+
+<div>
+    <h4>Turno</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Dias.Dias1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dias.Dias1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dias1.Dias1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dias1.Dias1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hora_Ini)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hora_Ini)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hora_Fin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hora_Fin)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Borrar" class="btn btn-danger" /> |
+            @Html.ActionLink("Regresar", "Index")
+        </div>
+    }
+</div>

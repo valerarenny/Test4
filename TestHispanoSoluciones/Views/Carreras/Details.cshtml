@@ -1,0 +1,26 @@
+﻿@model TestHispanoSoluciones.Models.Carrera
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Carrera</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id_Carrera }) |
+    @Html.ActionLink("Regresar", "Index")
+</p>

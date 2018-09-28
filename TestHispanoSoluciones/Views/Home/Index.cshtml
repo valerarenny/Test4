@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h1>Configuraciones</h1>
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        <span class="glyphicon glyphicon-cog"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("Asignaciones", "Index", "Asignacions", new { area = "" }, new { @class = "navbar-brand" })</li>
+        <li>@Html.ActionLink("Carrera", "Index", "Carreras", new { area = "" }, new { @class = "navbar-brand" })</li>
+        <li>@Html.ActionLink("Departamento", "Index", "Departamentoes", new { area = "" }, new { @class = "navbar-brand" })</li>
+        <li>@Html.ActionLink("Roles", "Index", "Rols", new { area = "" }, new { @class = "navbar-brand" })</li>
+        <li>@Html.ActionLink("Estatus", "Index", "Status", new { area = "" }, new { @class = "navbar-brand" })</li>
+        <li>@Html.ActionLink("Tipos de laboratorio", "Index", "TipoLabs", new { area = "" }, new { @class = "navbar-brand" })</li>
+        <li>@Html.ActionLink("Turnos", "Index", "Turnoes", new { area = "" }, new { @class = "navbar-brand" })</li>
+        <li>@Html.ActionLink("Dias", "Index", "Dias", new { area = "" }, new { @class = "navbar-brand" })</li>
+
+    </ul>
+</div>
+<h1>Personal</h1>
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        <span class="glyphicon glyphicon-lock"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("Docentes", "Index", "Docentes", new { area = "" }, new { @class = "navbar-brand" })</li>
+        <li>@Html.ActionLink("Personal Administrativo", "Index", "PersonalAdministrativoes", new { area = "" }, new { @class = "navbar-brand" })</li>
+    </ul>
+</div>
+
+<h1>Laboratorio</h1>
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        <span class="glyphicon glyphicon-off"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("Laboratorios", "Index", "Laboratorios", new { area = "" }, new { @class = "navbar-brand" })</li>
+      </ul>
+</div>
+
+
+

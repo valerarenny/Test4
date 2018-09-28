@@ -1,0 +1,73 @@
+﻿@model TestHispanoSoluciones.Models.Laboratorio
+
+@{
+    ViewBag.Title = "Borrar";
+}
+
+<h2>Borrar</h2>
+
+<h3>Estas seguro que quieres borrar esto?</h3>
+
+<div>
+    <h4>Laboratorio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Docente.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Docente.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PersonalAdministrativo.Nombres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PersonalAdministrativo.Nombres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status.Status1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status.Status1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoLab.Tipo_Lab)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoLab.Tipo_Lab)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CapMax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CapMax)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NroEquipos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NroEquipos)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Borrar" class="btn btn-danger" /> |
+            @Html.ActionLink("Regresar", "Index")
+        </div>
+    }
+</div>
